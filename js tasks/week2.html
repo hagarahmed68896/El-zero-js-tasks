@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="elzero"></div>
+    <script>
+        // lab1
+        // Add Variables Here
+   const one='10';
+   const two='20';
+   sum=  one+two;
+// Ouput
+console.log(sum); // Normal Concatenate => 1020
+console.log(typeof"one+two"); // Normal Concatenate => String
+console.log(`${one}${two}`); // Template Literals Way => 1020
+console.log(typeof(`${one}${two}`)); // Template Literals Way => String
+
+console.log(one+ "\n" +two);
+/*
+  Normal Concatenate
+  20
+  10
+*/
+
+console.log(`${one}
+${two}`);
+/*
+  Template Literals Way
+  20
+  10
+*/
+
+// lab 2
+var elzero = document.getElementsByClassName('elzero');
+console.log(elzero.innerHTML); // object
+console.log(typeof elzero); // object
+// lab 3
+console.log("`I'm" +" "+ "In" +"\n"+ "\\\\" +"\n"+ "Love" + " \\\\" + " \"\"\" '\'\'\ " +"\n" +
+" \+\+\ " +" with"+ " \+\+\ " +"\n"+ " \\\"\"\"\\\"\"\" " +"\n"+ " \"\"" +"JavaScript" + "\"\"\`\`"
+);
+// lab 4
+let a = 21;
+let b = 20;
+
+console.log(`_${a}_${b}${a}_${b}${a}_${b}${a}_${b}_`); // _21_2021_2021_2021_20_
+    </script>
+</body>
+</html>
